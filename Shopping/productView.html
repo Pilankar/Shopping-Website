@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png"
+        href="https://i.pinimg.com/originals/18/e1/80/18e180218bdac1685b79197c9023259b.png" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/6ef8a5c3b5.js" crossorigin="anonymous"></script>
+
+    <link rel="stylesheet" type="text/css" href="shopping.css">
+
+    <title>productView</title>
+
+    <style>
+        section {
+            /* padding: 1.5rem; */
+            margin: 20px 0px 20px 0px;
+            display: inline-block;
+        }
+
+        .row {
+            margin-top: 20px;
+        }
+
+        aside {
+            width: auto;
+            height: 30%;
+            float: left;
+        }
+
+        /* .content-info {
+            margin-left: auto;
+        } */
+
+        img {
+            /* padding: 20px; */
+            display: block;
+            margin: auto;
+            width: 90%;
+            border: 1px solid black;
+            position: -webkit-sticky;
+            position: sticky;
+            top: 0;
+        }
+
+        .productCost {
+            font-weight: bold;
+            font-size: large;
+            color: rgb(180, 13, 13);
+        }
+
+        .star-rating {
+            color: rgb(255, 208, 0);
+            font-size: larger;
+        }
+
+        .content-info button {
+            box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        }
+
+        .container {
+            background-color: white;
+            padding-bottom: 15px;
+            padding-top: 15px;
+        }
+
+        /* #item {
+            float: right;
+        } */
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-dark bg-dark navbar-expand-lg" id="header">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02"
+                aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <a class="navbar-brand" href="#">Amazon</a>
+
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Link</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Disabled</a>
+                    </li>
+                </ul>
+                <form class="form-inline my-2 mx-4 my-lg-0">
+                    <input class="form-control mr-sm-2" type="search" placeholder="Search">
+                    <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Search</button>
+                </form>
+            </div>
+            <a class="navbar-brand" href="Cart.html">
+                <i class="fas fa-shopping-cart"></i>
+                <sup><span class="badge badge-pill badge-light">3</span></sup>
+                <span class="sr-only">cart items</span>
+            </a>
+
+        </nav>
+    </header>
+
+
+    <main>
+        <div class="container">
+
+            <div class="row">
+                <div class="col-sm-6">
+                    <aside>
+                        <a href="white-girls-t-shirts-500x500.jpg" target="_blank">
+                            <img src="white-girls-t-shirts-500x500.jpg" alt="tshirt">
+                        </a>
+
+                    </aside>
+                </div>
+                <div class="col-sm-6">
+                    <section id="item">
+                        <small>
+                            <p>Brand: <span>Harpa</span></p>
+                        </small>
+                        <h3>Product Name</h3>
+                        <!-- <p class="star-rating">&#11088; &#11088; &#11088; &#11088; &#11088;</p> -->
+                        <p class="star-rating"> &#9733; &#9733; &#9733; &#9733; &#9734;</p>
+
+                        <hr>
+
+                        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ratione, unde temporibus repellat
+                            fugit
+                            ad magnam perferendis impedit sunt. Dolores provident debitis quae eum labore voluptatibus
+                            non,
+                            minima quo fugit tempore?
+                        </p>
+                        <p>M.R.P.: <strike><var>$ 350.00</var></strike></p>
+                        <p>Price: <var class="productCost">$ 250.00</var></p>
+                        <br>
+                        <p>
+                            <label for="size">Size: </label>
+                            <select id="size">
+                                <option value="-1">Select</option>
+                                <option value="1">S</option>
+                                <option value="2">M</option>
+                                <option value="3">L</option>
+                                <option value="4">XL</option>
+                            </select>
+                            &ensp;&ensp;
+                            <label for="qty">Qty:</label>
+
+                            <select id="qty">
+                                <option value="-1">Select</option>
+                                <option value="1" selected>1</option>
+                                <option value="2">2</option>
+                                <option value="3">3</option>
+                                <option value="4">4</option>
+                                <option value="5">5 (Max)</option>
+                            </select>
+                        </p>
+                        <ul>
+                            <li>Care Instructions: Hand Wash Only</li>
+                            <li>Fit Type: Regular Fit</li>
+                            <li>Color Name: Black</li>
+                            <li>100% Polyester</li>
+                            <li>Hand wash</li>
+                            <li>Short sleeve</li>
+                            <li>Round neck</li>
+                        </ul>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <button type="button" class="btn btn-warning btn-lg btn-block">Add To Cart</button>
+                            </div>
+                            <div class="col-sm-6">
+                                <button type="button" class="btn btn-secondary btn-lg btn-block">Buy Now</button>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+
+            </div>
+            
+
+
+            <!-- <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                <label class="btn btn-secondary active">
+                  <input type="radio" name="options" id="option1" autocomplete="off"> Active
+                </label>
+                <label class="btn btn-secondary">
+                  <input type="radio" name="options" id="option2" autocomplete="off"> Radio
+                </label>
+              </div> -->
+
+
+
+
+        </div>
+
+    </main>
+
+    <a href="#header" id="back-top" class="btn btn-secondary btn-lg btn-block active" role="button"
+        aria-pressed="true"><i class="fas fa-caret-up"></i>&ensp;Back To Top</a>
+    <!-- <a href="#header" class="bg-secondary text-light" id="back-top">Back To Top</a> -->
+
+
+    <footer class="bg-dark text-light">
+
+        <p>&copy; 2021 by <span>Mitali Pilankar</span> </p>
+        <p>
+            This page was created by Mitali Pilankar &amp; Colleen van Lent. To learn more about web design, visit <a
+                href="http://www.intro-webdesign.com">Intro to Web Design.</a>
+        </p>
+        <i class="fab fa-facebook-square fa-2x"></i>
+        <i class="fab fa-linkedin fa-2x"></i>
+        <i class="fab fa-pinterest-square fa-2x"></i>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>

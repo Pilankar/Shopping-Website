@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" type="image/png"
+        href="https://i.pinimg.com/originals/18/e1/80/18e180218bdac1685b79197c9023259b.png" />
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://kit.fontawesome.com/6ef8a5c3b5.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="jquery-3.5.1.min.js"></script>
+    <script src="shopping.js"></script>
+
+    <link rel="stylesheet" type="text/css" href="shopping.css">
+
+    <title>Cart</title>
+
+    <style>
+
+        section {
+            padding: 0.5rem;
+        }
+
+        /* Ids */
+        .productName {
+            width: 50%;
+            color: darkslateblue;
+            font-weight: bolder;
+            font-size: larger;
+        }
+
+        .productCost {
+            width: 20%;
+            font-weight: bold;
+            text-align: right;
+        }
+
+        .productQty {
+            width: 20%;
+            text-align: center;
+        }
+
+        .productCancel {
+            width: 10%;
+            text-align: right;
+        }
+
+        /* Table */
+        table {
+            margin-left: 6rem;
+        }
+
+        tr {
+            width: max-content;
+            border-radius: 40%;
+            /* background-color: rgb(235, 235, 235); */
+            padding: 1rem;
+            border-bottom: 1px solid lightgray;
+        }
+
+        select {
+            width: 40px;
+            height: 40px;
+            border: none;
+        }
+
+       @media only screen and (max-width: 600px) {
+            table {
+                margin-left: 1rem;
+            }
+
+            .productQty {
+                width: 30%;
+            }
+
+            td {
+                font-size: small;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav class="navbar navbar-dark bg-dark navbar-expand-lg" id="header">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <a class="navbar-brand" href="#">Amazon</a>
+          
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Link</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link disabled" href="#">Disabled</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 mx-4 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search">
+                <button class="btn btn-outline-warning my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            </div>
+            <a class="navbar-brand" href="Cart.html">
+                <i class="fas fa-shopping-cart"></i>
+                <sup><span class="badge badge-pill badge-light">3</span></sup>
+                <span class="sr-only">cart items</span>
+            </a>
+            
+          </nav>
+    </header>
+
+
+    <main>
+        <section>
+
+
+            <h3>Cart</h3>
+            <hr>
+            <table>
+                <tr class="table-row">
+                    <td class="productName">Lorem ipsum 1</td>
+                    <td class="productCost"><var>$ 250 </var></td>
+                    <td class="productQty">
+                        <label>Qty:</label>
+
+                        <select class="qty" >
+                            <option value="0">0 (Delete)</option>
+                            <option value="1" selected>1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Maximum)</option>
+                        </select>
+                    </td>
+                    <td class="productCancel">
+                        <button type="button" class="btn btn-outline-danger text-center">
+                            <i class="far fa-trash-alt"></i>
+                        </button>
+                    </td>
+
+                </tr>
+
+                <tr class="table-row">
+                    <td class="productName">Lorem ipsum 2</td>
+                    <td class="productCost"><var>$ 250 </var></td>
+                    <td class="productQty">
+                        <label>Qty:</label>
+
+                        <select class="qty">
+                            <option value="0">0 (Delete)</option>
+                            <option value="1" selected>1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Maximum)</option>
+                        </select>
+                    </td>
+                    <td class="productCancel">
+                        <button type="button" class="btn btn-outline-danger text-center">
+                            <i class="far fa-trash-alt"></i>
+                        </button>
+                    </td>
+
+                </tr>
+
+                <tr class="table-row">
+                    <td class="productName">Lorem ipsum 3</td>
+                    <td class="productCost"><var>$ 250 </var></td>
+                    <td class="productQty">
+                        <label>Qty:</label>
+
+                        <select class="qty">
+                            <option value="0">0 (Delete)</option>
+                            <option value="1" selected>1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                            <option value="5">5 (Maximum)</option>
+                        </select>
+                    </td>
+                    <td class="productCancel">
+                        <button type="button" class="btn btn-outline-danger text-center">
+                            <i class="far fa-trash-alt"></i>
+                        </button>
+                    </td>
+
+                </tr>
+            </table>
+            <button class="btn btn-warning text-light add" name="add">Add</button>
+
+
+        </section>
+        <section style="margin-top: 2rem;">
+            <b>Total :</b> <var>$ 750</var>
+        </section>
+    </main>
+
+    <a href="#header" id="back-top" class="btn btn-secondary btn-lg btn-block active" role="button"
+    aria-pressed="true"><i class="fas fa-caret-up"></i>&ensp;Back To Top</a>
+
+    <footer class="bg-dark text-light">
+    
+        <p>&copy; 2021 by <span>Mitali Pilankar</span> </p>
+        <p>
+            This page was created by Mitali Pilankar &amp; Colleen van Lent. To learn more about web design, visit <a
+                href="http://www.intro-webdesign.com">Intro to Web Design.</a>
+        </p>
+        <i class="fab fa-facebook-square fa-2x"></i>
+        <i class="fab fa-linkedin fa-2x"></i>
+        <i class="fab fa-pinterest-square fa-2x"></i>
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
